@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+
+
+@theme {
+
+
+--color-background: #0d0d0d;
+  --color-foreground: #e6e6e6;
+
+  --color-card: #1a1a1a;
+  --color-card-foreground: #e6e6e6;
+
+  --color-popover: #141414;
+  --color-popover-foreground: #e6e6e6;
+
+  --color-primary: #0d0d0d;
+  --color-primary-foreground: #e6e6e6;
+
+  --color-secondary: #1a1a1a;
+  --color-secondary-foreground: #e6e6e6;
+
+  --color-muted: #262626;
+  --color-muted-foreground: #a6a6a6;
+
+  --color-accent: #7fff00;
+  --color-accent-foreground: #0d0d0d;
+
+  --color-destructive: #ff4c4c;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #262626;
+  --color-input: #262626;
+  --color-ring: #7fff00;
+
+  --radius: 0.75rem;
+  
+  --color-neon-green: #7fff00;
+  --color-neon-green-glow: #7fff00;
+  --color-dark-bg: #0d0d0d;
+  --color-darker-bg: #1a1a1a;
+  
+  --color-gradient-neon: linear-gradient(135deg, #7fff0033, #7fff000d);
+  --color-shadow-neon: 0 0 40px #7fff004d;
+  --color-transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --color-sidebar-background: #fafafa;
+  --color-sidebar-foreground: #3f3f3f;
+  --color-sidebar-primary: #1a1a1a;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-accent: #f5f5f5;
+  --color-accent-foreground: #1a1a1a;
+  --color-border: #e8e8e8;
+  --color-ring: #2b6cff;
+
+
+  /* FONTES */
+
+    --font-Mont:  "Montserrat", sans-serif;
+}
+
+.dark {
+  --color-background: #0d0d0d;
+  --color-foreground: #e6e6e6;
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px #7fff0080;
+  }
+  
+  .neon-border {
+    border: 1px solid #7fff00;
+    box-shadow: 0 0 20px #7fff004d;
+  }
+  
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-neon);
+    transform: translateY(-2px);
+  }
+
+
+}
+
+
+
+
+
+
+
