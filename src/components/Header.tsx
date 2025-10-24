@@ -18,10 +18,10 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
         
-          <div className="text-2xl font-bold">
+          <a href="#hero" className="text-2xl font-bold">
             <span className="text-foreground">FIT</span>
             <span className="text-accent">COACH</span>
-          </div>
+          </a>
 
           
           <div className="hidden md:flex items-center gap-8 ">
